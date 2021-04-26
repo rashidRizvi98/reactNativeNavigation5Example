@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import { AuthContext } from "./App/context";
+import { AuthContext } from "./context";
 import {
   SignIn,
   CreateAccount,
@@ -14,9 +14,9 @@ import {
   Search2,
   Profile,
   Splash,
-} from "./App/Screens";
+} from "./Screens";
 
-export default function App() {
+export default function Route() {
   const AuthStack = createStackNavigator();
   const AuthStackScreen = () => (
     <AuthStack.Navigator>
